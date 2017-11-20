@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>
+2017 Spring 機械設計工程系網際內容管理
+</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="data/reveal/reveal.css">
+    <link rel="stylesheet" href="data/reveal/black.css" id="theme">
+    
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="data/reveal/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'data/reveal/pdf.css' : 'data/reveal/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="data/reveal/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+
+<section data-markdown>
+    <script type="text/template">
+## 2017Fall CADP 與 CP
+
+### 虎科大機械設計工程系
+##設計一乙王得榮40623211
+<small>
+Created by [KMOLab](http://kmolab.github.io/blog/)
+</small>
+
+[CADP 與 CP 課程網誌](blog/index.html)
+
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# W1-W3
+
+* 準備筆記本、隨身碟與耳機
+* 三種創造力以及六種表達
+* 建立留言板
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# w4-w6
+
+* 當資料變更時, 利用 fossil status 查看內容, 需要時利用 fossil delete 修正 利用 fossil clone和 fossil open 後以 Leo Editor 修改網誌,作者名稱後,在轉檔過程會刪除之前 作者名稱, 造成 Fossil資料檢查時無法對應之前的資料, 因此必須再用 fossil delete blog/author/yen.html 將資料刪除後, 再 fossil commit -m 更新遠端版本.
+* 使用指令: mkdir創建目錄 cd進入目錄 .所在目錄 ..上個目錄 fossil clone init open add status commit -m 以 mkdir .fossil-settings 建立所需目錄 ignore-glob 檔案內容: /.git/, /pycache/, /.pyc
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+        <script type="text/template">
+    # w7
+
+    * 這週是第一次考試,也第一次錄影片
+    * 說明當版本資料變更時，可以利用 fossil status 查看內容，必要時利用 fossil delete 維護資料。 說明如何利用 .fossil-settings 目錄下的 ignore-glob 檔案，避開從近端推送到遠端的特定檔案。
+    * 統整w1-w6所有課程
+    
+
+        </script>
+</section>
+
+
+						
+<section>
+    <section data-markdown>
+        <script type="text/template">
+    # w8
+    
+    * 第二次考試,已經熟悉錄製影片
+    * 課堂中影片上傳出現問題,因此回去才補出來
+    * 檢討;優該在課堂中提出讓大家討論
+
+  
+
+        </script>
+    </section>
+
+
+    						
+
+</section>
+
+
+						
+<section>
+<section data-markdown>
+        <script type="text/template">
+    # 課程如何評分
+
+    * 自評成績70
+
+        </script>
+</section>
+
+
+    						
+
+</section>
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 投影片到此結束
+
+    </script>
+</section>
+
+
+</div>
+
+</div>
+
+<script src="data/reveal/head.min.js"></script>
+<script src="data/reveal/reveal.js"></script>
+<script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'data/reveal/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'data/reveal/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'data/reveal/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'data/reveal/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'data/reveal/zoom.js', async: true },
+                { src: 'data/reveal/notes.js', async: true },
+                { src: 'data/reveal/math.js', async: true }
+            ]
+        });
+</script>
+</body>
+</html>
+
